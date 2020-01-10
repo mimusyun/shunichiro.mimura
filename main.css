@@ -29,18 +29,20 @@ p:hover {
     background-size: 100%;
     margin-top: 5vh;
     overflow:hidden;
+    opacity: 0.7;
+    background-position: 50% 10%;
 }
 
 @media only screen and (max-width: 600px) {
     #bg-img {  
-        height: 100vh;
-        max-width: 100%;
         margin: 0 auto;
         background: url(drawing.jpg);
         background-repeat: no-repeat;
-        background-size: 140%;
+        background-size: 150%;
         margin-top: 16vh;
+        padding-right: 10vh;
         overflow:hidden;
+        background-position: 50% 10%;
     }
 }
 
