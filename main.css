@@ -39,7 +39,7 @@ p:hover {
         background: url(drawing.jpg);
         background-repeat: no-repeat;
         background-size: 140%;
-        margin-top: 5vh;
+        margin-top: 15vh;
         overflow:hidden;
     }
 }
