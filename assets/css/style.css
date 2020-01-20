@@ -1,0 +1,374 @@
+/* font include here */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500,700|Roboto+Slab&display=swap');
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a,
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    cursor: pointer;
+    transition: .3s all;
+    text-decoration: none;
+}
+
+:focus {
+    outline-width: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* main style start here */
+
+.header-area {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.banner-img {
+    width: calc(100% - 265px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    margin-left: 265px;
+    background-size: cover;
+    background-position: center 140px;
+    background-image: url(../img/dextop-drawing.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+.heading,
+.menu {
+    padding-left: 40px;
+}
+
+.heading h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 172px;
+    line-height: .8em;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.07em;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu ul li a {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+.menu ul li a span {
+    display: inline-block;
+    padding-right: 18px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+
+/* media for 1199px*/
+
+@media screen and (max-width:1199px) {}
+
+
+/* media for 991px*/
+
+@media screen and (max-width:991px) {
+    .heading {
+        padding: 40px;
+    }
+    .menu {
+        padding-left: 40px;
+    }
+    .heading h2 {
+        font-size: 100px;
+    }
+    .banner-img {
+        width: calc(100% - 170px);
+        margin-left: 170px;
+        background-position: center 80px;
+    }
+    .menu ul li a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .menu ul li a span {
+        padding-right: 10px;
+    }
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after,
+    [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 10px;
+        font-style: normal;
+    }
+}
+
+
+/* media for 767px*/
+
+@media screen and (max-width:767px) {
+    .banner-img {
+        background-position: center -55px;
+        background-image: url(../img/drawing.png);
+        width: calc(100% - 110px);
+        margin-left: 110px;
+    }
+    .heading h2 {
+        font-size: 55px;
+    }
+    .heading {
+        padding: 25px;
+    }
+    .menu {
+        padding-left: 25px;
+    }
+    .menu ul li a {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+
+/* media for 575px*/
+
+@media screen and (max-width:575px) {
+    .banner-img {
+        background-position: center -25px;
+        background-image: url(../img/drawing.png);
+        width: calc(100% - 0px);
+        margin-left: 0px;
+    }
+    .heading h2 {
+        font-size: 16px;
+    }
+    [class^="flaticon-menu"]:before,
+    [class*=" flaticon-menu"]:before,
+    [class^="flaticon-menu"]:after,
+    [class*=" flaticon-menu"]:after,
+    [class^="flaticon-close"]:before,
+    [class*=" flaticon-close"]:before,
+    [class^="flaticon-close"]:after,
+    [class*=" flaticon-close"]:after {
+        font-size: 20px;
+    }
+    .menu {
+        width: 100%;
+        height: calc(100% - 84px);
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(0.6);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease-in;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .menu.active {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition-delay: 3s;
+        transition: .3s ease-in;
+    }
+    .menu.active ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu ul li a {
+        color: #ffffff;
+    }
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 25px;
+        cursor: pointer;
+    }
+    .flaticon-close {
+        transform: scale(0);
+        transition: .3s all;
+        display: block;
+        top: 0;
+        position: absolute;
+        left: 0;
+    }
+    .flaticon-close.close {
+        transform: scale(1);
+    }
+    .flaticon-menu {
+        transform: scale(1);
+        transition: .3s all;
+    }
+    .flaticon-menu.show {
+        transform: scale(0);
+        display: block;
+    }
+}

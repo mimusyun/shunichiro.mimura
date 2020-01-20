@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>shunichiro.mimura</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shunichiro.mimura</title>
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
-    <div id="bg-img"></div>
-    
-    <h1 class="noselect" id="title">shunichiro.mimura</h1>
-    
-    <a href="https://www.facebook.com/shunichiro.mimura" target="_blank">
-        <p class="noselect" id="facebook">facebook</p>
-    </a>
-    
-    <a href="https://twitter.com/mimusyun" target="_blank">
-        <p class="noselect" id="twitter">twitter</p>
-    </a>
-    
-    <a href="https://www.linkedin.com/in/shunichiro-mimura-90b04556/" target="_blank">
-        <p class="noselect" id="linkedin">linkedin</p>
-    </a>
-
-    <a href="#" target="_blank">
-        <p class="noselect" id="note">note</p>
-    </a>
-
-    <a href="https://github.com/mimusyun" target="_blank">
-        <p class="noselect" id="github">github</p>
-    </a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header-area">
+                <div class="heading">
+                    <h2>shunichiro</br>mimura</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href=""><span class="flaticon-icon-60813"></span>about me</a></li>
+                        <li><a href=""><span class="flaticon-icon-60813"></span>contact</a></li>
+                    </ul>
+                </div>
+                <div class="banner-img"></div>
+                <!-- responsive menu bar -->
+                <div class="menu-bar">
+                    <span class="flaticon-menu"></span>
+                    <span class="flaticon-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".menu-bar").click(function() {
+                $(this).children(".flaticon-menu").toggleClass("show");
+                $(this).children(".flaticon-close").toggleClass("close")
+                $(".menu").toggleClass("active")
+            })
+        });
+    </script>
 </body>
+
 </html>
